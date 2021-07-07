@@ -12,9 +12,23 @@
     height: 300px;
     width: 1000px;
     background-color: chartreuse;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
+
 .cart {
     height: 300px;
     width: 1000px;
     background-color:darkorange;
+}
+.item-card {
+    height: 75px;
+    width: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+
 }
