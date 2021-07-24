@@ -30,19 +30,35 @@ const product = {
         for (let property in obj) {
             let propertyOfItem = document.createElement('div')
             propertyOfItem.classList.add('item-property')
-            propertyOfItem.innerHTML = `${property} : ${obj[property]}`
+            propertyOfItem.textContent = `${property} : ${obj[property]}`
             cardOfItem.append(propertyOfItem)
         }
         let addCard = document.querySelector('.sale')
         addCard.append(cardOfItem)
-    }
 
+        let createButton = document.createElement('button')
+        createButton.classList.add('item-button')
+        createButton.textContent = "Add to cart"
+        cardOfItem.append(createButton)
+    },
+
+    buttonClick(){
+        let objectOnClick = document.querySelectorAll('.item-button')
+        for (let elem of objectOnClick) {
+    elem.onclick = function() {
+        console.log(document.elem.childElement)
+        
+    }
+    }
+    }
+    
 }
 const cart = {
 
 }
 
-product.renderItemCard(this.shoes)
-product.renderItemCard(this.boots)
-product.renderItemCard(this.socks)
-product.renderItemCard(this.tshirt)
+product.renderItemCard(shoes)
+product.renderItemCard(boots)
+product.renderItemCard(socks)
+product.renderItemCard(tshirt)
+product.buttonClick()

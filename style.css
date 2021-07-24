@@ -24,8 +24,9 @@
     background-color:darkorange;
 }
 .item-card {
-    height: 75px;
+    height: 100px;
     width: 100px;
+    border: 1px solid black;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
