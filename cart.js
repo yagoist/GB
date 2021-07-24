@@ -1,23 +1,24 @@
 const product = {
-    shoes: shoes = {
+    1: 1 = {
         item: 'shoes',
-        size: 42,
+        size: '42',
         price: 4200,
         quantity: 3
     },
-    boots: boots = {
+    2: 2 = {
         item: 'boots',
-        size: 40,
+        size: '40',
         price: 8300,
         quantity: 2
     },
-    socks: socks = {
+    3: 3 = {
         item: 'socks',
-        size: 39 - 42,
+        size: '39 - 42',
         price: 150,
         quantity: 1
     },
-    tshirt: tshirt = {
+    4: 4 = {
+        art: 0004,
         item: 'T-Shirt',
         size: 'M',
         price: 700,
@@ -26,6 +27,7 @@ const product = {
 
     renderItemCard(obj) {
         let cardOfItem = document.createElement('div')
+        cardOfItem.id = `${obj.art}`
         cardOfItem.classList.add('item-card')
         for (let property in obj) {
             let propertyOfItem = document.createElement('div')
@@ -46,7 +48,10 @@ const product = {
         let objectOnClick = document.querySelectorAll('.item-button')
         for (let elem of objectOnClick) {
     elem.onclick = function() {
-        console.log(document.elem.childElement)
+        parentElem = elem.parentElement
+        let a = parentElem.getAttribute('id')
+        for (let property in )
+        delete product.a
         
     }
     }
