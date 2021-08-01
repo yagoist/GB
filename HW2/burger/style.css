@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    margin: 0 auto;
+    background-color: cyan;
+    height: 1000px;
+    width: 1000px;
+}
+.sale
+.cart
+.total {
+    height: 300px;
+    width: 1000px;
+    background-color: chartreuse;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart {
+    background-color:darkorange;
+}
+.item-card {
+    height: 75px;
+    width: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.desc {
+    border: 1px solid black;
+}
+.total {
+    background-color: darkkhaki;
+}
